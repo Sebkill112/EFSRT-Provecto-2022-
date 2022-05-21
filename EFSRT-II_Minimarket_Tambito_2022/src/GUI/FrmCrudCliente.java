@@ -46,7 +46,7 @@ public class FrmCrudCliente extends JInternalFrame {
 		setClosable(true);
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setTitle("CRUD de Cliente");
-		setBounds(100, 100, 1024, 786);
+		setBounds(100, 100, 1024, 715);
 		getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Mantenimiento Cliente");
@@ -123,7 +123,7 @@ public class FrmCrudCliente extends JInternalFrame {
 		getContentPane().add(comboBox_1);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 422, 992, 325);
+		scrollPane.setBounds(10, 411, 992, 267);
 		getContentPane().add(scrollPane);
 		
 		table = new JTable();
