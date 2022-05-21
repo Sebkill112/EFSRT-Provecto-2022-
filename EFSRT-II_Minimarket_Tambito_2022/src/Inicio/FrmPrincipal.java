@@ -39,6 +39,7 @@ import java.awt.Frame;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class FrmPrincipal extends JFrame implements ActionListener {
 
@@ -107,9 +108,10 @@ public class FrmPrincipal extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public FrmPrincipal() {
+		setExtendedState(Frame.MAXIMIZED_BOTH);
 		setResizable(false);
 		setTitle("Sistema Minimarket \"Tambito Mass\"");
-		setBounds(100, 100, 759, 510);
+		setBounds(100, 100, 1382, 688);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
@@ -249,8 +251,9 @@ public class FrmPrincipal extends JFrame implements ActionListener {
 		contentPane.add(desktopPane, BorderLayout.CENTER);
 
 		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setIcon(new ImageIcon(FrmPrincipal.class.getResource("/img/minimarket_tambito.png")));
-		lblNewLabel.setBounds(10, 11, 713, 409);
+		lblNewLabel.setBounds(318, 44, 713, 483);
 		desktopPane.add(lblNewLabel);
 
 		desktopPane.add(frmRC);
